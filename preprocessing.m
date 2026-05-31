@@ -30,21 +30,21 @@ aSupplyTransport = 0.01; % Dissipation coefficient
 LDratioSupply = 136.1;% ratio of the length over the diameter of the pipes to the supply
 AreaSupply = 6.79;% area of the pipe to the supply
 heightDifference = 300;% height difference between the reservoirs
-pipeRoughnessSupply = 0.00015; %coefficient for the pipe roughness
-PipeLengthSupply = 400;% length of the pipes to the supply
-numberOfPipes = 10;
+pipeRoughnessSupply = 0.000045; %coefficient for the pipe roughness
+PipeLengthSupply = 484;% length of the pipes to the supply
+numberOfPipes = 5;
 gAccel = 9.81;
 rho = 1000;
 mu = 0.0013;
 dynamicViscosity = 0.001306;
-PipeDiameter = 2.94;
+PipeDiameter = 4.12;
 K_bends = 0.2;
 
 % injection system
 aInjection = 0.3; % Dissipation coefficient
 
 % storage system
-EStorageMax     = 361000000*unit("kWh"); % Maximum energy
+EStorageMax     = 43055555*unit("kWh"); % Maximum energy
 EStorageMin     = 0.0*unit("kWh"); % Minimum energy
 EStorageInitial = 0*unit("kWh"); % Initial energy
 bStorage        = 0.05/unit("year");  % Storage dissipation coefficient
