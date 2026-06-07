@@ -39,11 +39,7 @@ mu = 0.0013;
 dynamicViscosity = 0.001306;
 PipeDiameter = 4.12;
 K_bends = 0.2;
-numberOfpipesDemand = 1;
-PipediameterDemand = 3.08;
-AreaDemand = 7.459;% area of the pipe to the supply
-pipeRoughnessDemand = 0.000045; %coefficient for the pipe roughness
-PipeLengthDemand = 484;% length of the pipes to the supply
+
 
 % injection system
 aInjection = 0.3; % Dissipation coefficient
@@ -59,3 +55,8 @@ aExtraction = 0.05; % Dissipation coefficient
 
 % transport to demand
 aDemandTransport = 0.0; % Dissipation coefficient
+numberOfpipesDemand = 1;
+PipediameterDemand = 3.08;
+AreaDemand = 7.459;% area of the pipe to the supply
+pipeRoughnessDemand = 0.000045; %coefficient for the pipe roughness
+PipeLengthDemand = 484;% length of the pipes to the supply
