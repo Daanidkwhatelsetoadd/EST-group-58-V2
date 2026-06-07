@@ -45,11 +45,10 @@ K_bends = 0.2;
 aInjection = 0.3; % Dissipation coefficient
 
 % storage system
-EStorageMax     = 43055555*unit("kWh"); % Maximum energy
-EStorageMin     = 0.0*unit("kWh"); % Minimum energy
-EStorageInitial = 0*unit("kWh"); % Initial energy
-bStorage        = 0.05/unit("year");  % Storage dissipation coefficient
-
+EStorageMax     = 7000000*unit("kWh");  
+EStorageMin     = 318825*unit("kWh");  
+EStorageInitial = 318825*unit("kWh");  
+bStorage        = 0.05/unit("year");   
 % extraction system
 aExtraction = 0.05; % Dissipation coefficient
 
