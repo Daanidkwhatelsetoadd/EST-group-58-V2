@@ -27,35 +27,37 @@ stopt  = min([Supply.Timeinfo.End, Demand.Timeinfo.End]);
 % transport from supply
 aSupplyTransport = 0.01; % Dissipation coefficient
 
-LDratioSupply = 136.1;% ratio of the length over the diameter of the pipes to the supply
-AreaSupply = 6.79;% area of the pipe to the supply
-heightDifference = 300;% height difference between the reservoirs
-pipeRoughnessSupply = 0.000045; %coefficient for the pipe roughness
-PipeLengthSupply = 484;% length of the pipes to the supply
-numberOfPipes = 5;
-gAccel = 9.81;
+LDratioSupply = 136.1; % ratio of the length over the diameter of the pipes to the supply
+AreaSupply = 6.79; % area of the pipe to the supply
+heightDifference = 300; % height difference between the reservoirs
+pipeRoughnessSupply = 0.000001772; % coefficient for the pipe roughness
+PipeLengthSupply = 484; % length of the pipes to the supply
+numberOfPipes = 5; % number of pipes from supply
+gAccel = 9.81; % The gravitational accelaration
 rho = 1000;
-mu = 0.0013;
+mu = 0.0013; 
 dynamicViscosity = 0.001306;
-PipeDiameter = 4.12;
-K_bends = 1.5;
+PipeDiameter = 4.12; % Pipe diameter that is used from supply
+K_bends = 1.5; % The coefficient for minor losses in bends
 
 
 % injection system
 aInjection = 0.3; % Dissipation coefficient
 
 % storage system
-EStorageMax     = 7000000*unit("kWh");  
-EStorageMin     = 318825*unit("kWh");  
-EStorageInitial = 318825*unit("kWh");  
-bStorage        = 0.05/unit("year");   
+EStorageMax     = 7000000*unit("kWh"); % Maximum energy
+EStorageMin     = 318825*unit("kWh");  % Minimum energy
+EStorageInitial = 318825*unit("kWh");  % Initial energy
+bStorage        = 0.05/unit("year");   % Evaporation losses during the year 
+
 % extraction system
 aExtraction = 0.05; % Dissipation coefficient
 
 % transport to demand
+LDratioDemand = 136.1; % ratio of the length over the diameter of the pipes to demand
 aDemandTransport = 0.0; % Dissipation coefficient
 numberOfpipesDemand = 1;
-PipediameterDemand = 3.08;
+PipediameterDemand = 3.08; % Pipe diameter that is used in to demand
 AreaDemand = 7.459;% area of the pipe to the supply
-pipeRoughnessDemand = 0.000045; %coefficient for the pipe roughness
+pipeRoughnessDemand = 0.000001772; %coefficient for the pipe roughness
 PipeLengthDemand = 484;% length of the pipes to the supply
