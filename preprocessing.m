@@ -38,7 +38,7 @@ rho = 1000;
 mu = 0.0013;
 dynamicViscosity = 0.001306;
 PipeDiameter = 4.12;
-K_bends = 0.2;
+K_bends = 1.5;
 
 
 % injection system
