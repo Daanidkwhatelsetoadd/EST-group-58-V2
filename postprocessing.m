@@ -73,3 +73,24 @@ pie(ax, [EDirect, EfromExtraction, EBuy]/EtoDemandTransport);
 lgd = legend({"Direct from supply", "From storage", "Bought"});
 lgd.Layout.Tile = "south";
 title(sprintf("Delivered energy %3.2e [J]", EtoDemandTransport/unit('J')));
+
+
+WaterVolume = EStorage / (rho * gAccel * heightDifference); 
+
+time_days = tout; 
+
+figure('Name', 'Reservoir Water Volume', 'Color', 'w');
+plot(time_days, WaterVolume, 'LineWidth', 1.5, 'Color', '#0072BD');
+grid on;
+
+title('Upper Reservoir Volume over 1 Year', 'FontSize', 14, 'FontWeight', 'bold');
+xlabel('Time [days]', 'FontSize', 12);
+ylabel('Volume [m^3]', 'FontSize', 12);
+
+
+hold on;
+yline(7230000, 'r--', 'Max Physical Capacity (7,230,000 m^3)', 'LineWidth', 1.5, 'LabelHorizontalAlignment', 'left');
+yline(390000, 'k--', 'Dead Storage Limit (390,000 m^3)', 'LineWidth', 1.5, 'LabelHorizontalAlignment', 'left');
+hold off;
+
+ylim([0, 8000000]);

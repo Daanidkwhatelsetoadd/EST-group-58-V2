@@ -43,7 +43,7 @@ K_bends = 1.5; % The coefficient for minor losses in bends
 aInjection = 0.1; % Dissipation coefficient
 
 % storage system
-EStorageMax     = 7000000*unit("kWh"); % Maximum energy
+EStorageMax     = 5910525*unit("kWh"); % Maximum energy
 EStorageMin     = 318825*unit("kWh");  % Minimum energy
 EStorageInitial = 318825*unit("kWh");  % Initial energy
 bStorage        = 0.05/unit("year");   % Evaporation losses during the year 
