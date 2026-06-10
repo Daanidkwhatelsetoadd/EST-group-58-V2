@@ -25,8 +25,6 @@ stopt  = min([Supply.Timeinfo.End, Demand.Timeinfo.End]);
 %% System parameters
 
 % transport from supply
-aSupplyTransport = 0.01; % Dissipation coefficient
-
 LDratioSupply = 136.1; % ratio of the length over the diameter of the pipes to the supply
 AreaSupply = 6.79; % area of the pipe to the supply
 heightDifference = 300; % height difference between the reservoirs
@@ -42,7 +40,7 @@ K_bends = 1.5; % The coefficient for minor losses in bends
 
 
 % injection system
-aInjection = 0.3; % Dissipation coefficient
+aInjection = 0.1; % Dissipation coefficient
 
 % storage system
 EStorageMax     = 7000000*unit("kWh"); % Maximum energy
